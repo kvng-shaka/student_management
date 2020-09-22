@@ -23,6 +23,8 @@
     <link href="{{asset('../../assets/css/dashboard/dash_1.css')}}" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 <link rel="stylesheet" type="text/css" href="{{asset('../../assets/css/tables/table-basic.css')}}">
+<!-- CSS only -->
+<link rel="stylesheet" href="{{asset('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')}}" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
     <!-- BEGIN LOADER -->
@@ -271,12 +273,39 @@
                             </li>
                         </ul>
                     </li>
+            
 
+             <li class="menu">
+                        <a href="#users" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                <span>Students</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="users" data-parent="#accordionExample">
+                              <li>
+                                <a href="/studentform" data-target="#studentaddmodal"> Add Students </a>
+                            </li>
+                            <li>
+                                <a href="user_profile.html"> Active Students </a>
+                            </li>
+                            <li>
+                                <a href="user_account_setting.html"> Exited Students </a>
+                            </li>
+
+                             <li>
+                                <a href="user_account_setting.html"> All Students </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="menu">
                         <a href="#app" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
-                                <span>Apps</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
+                                <span>Trainings</span>
                             </div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
@@ -284,37 +313,22 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="app" data-parent="#accordionExample">
                             <li>
-                                <a href="apps_chat.html"> Chat </a>
+                                <a href="apps_chat.html"> Courses </a>
                             </li>
                             <li>
-                                <a href="apps_mailbox.html"> Mailbox  </a>
+                                <a href="apps_mailbox.html"> Trainings Schedules  </a>
                             </li>
                             <li>
-                                <a href="apps_todoList.html"> Todo List </a>
+                                <a href="apps_todoList.html"> Trainings Records </a>
                             </li>                            
-                            <li>
-                                <a href="apps_notes.html"> Notes </a>
-                            </li>
-                            <li>
-                                <a href="apps_scrumboard.html">Scrumboard</a>
-                            </li>
-                            <li>
-                                <a href="apps_contacts.html"> Contacts </a>
-                            </li>
-                            <li>
-                                <a href="apps_invoice.html"> Invoice List </a>
-                            </li>
-                            <li>
-                                <a href="apps_calendar.html"> Calendar </a>
-                            </li>
                         </ul>
                     </li>
 
                     <li class="menu">
                         <a href="#components" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                                <span>Components</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                                <span>Reports</span>
                             </div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
@@ -322,53 +336,14 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="components" data-parent="#accordionExample">
                             <li>
-                                <a href="component_tabs.html"> Tabs </a>
+                                <a href="component_tabs.html">Monthly Reports </a>
                             </li>
                             <li>
-                                <a href="component_accordion.html"> Accordions  </a>
+                                <a href="component_accordion.html">Training Reports </a>
                             </li>
                             <li>
-                                <a href="component_modal.html"> Modals </a>
+                                <a href="component_modal.html"> Training Cost Report </a>
                             </li>                            
-                            <li>
-                                <a href="component_cards.html"> Cards </a>
-                            </li>
-                            <li>
-                                <a href="component_bootstrap_carousel.html">Carousel</a>
-                            </li>
-                            <li>
-                                <a href="component_blockui.html"> Block UI </a>
-                            </li>
-                            <li>
-                                <a href="component_countdown.html"> Countdown </a>
-                            </li>
-                            <li>
-                                <a href="component_counter.html"> Counter </a>
-                            </li>
-                            <li>
-                                <a href="component_sweetalert.html"> Sweet Alerts </a>
-                            </li>
-                            <li>
-                                <a href="component_timeline.html"> Timeline </a>
-                            </li>
-                            <li>
-                                <a href="component_snackbar.html"> Notifications </a>
-                            </li>
-                            <li>
-                                <a href="component_session_timeout.html"> Session Timeout </a>
-                            </li>
-                            <li>
-                                <a href="component_media_object.html"> Media Object </a>
-                            </li>
-                            <li>
-                                <a href="component_list_group.html"> List Group </a>
-                            </li>
-                            <li>
-                                <a href="component_pricing_table.html"> Pricing Tables </a>
-                            </li>
-                            <li>
-                                <a href="component_lightbox.html"> Lightbox </a>
-                            </li>
                         </ul>
                     </li>
 
@@ -582,25 +557,7 @@
                         </ul>
                     </li>
                     
-                    <li class="menu">
-                        <a href="#users" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                                <span>Users</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
-                        </a>
-                        <ul class="collapse submenu list-unstyled" id="users" data-parent="#accordionExample">
-                            <li>
-                                <a href="user_profile.html"> Profile </a>
-                            </li>
-                            <li>
-                                <a href="user_account_setting.html"> Account Settings </a>
-                            </li>
-                        </ul>
-                    </li>
+                   
 
                     <li class="menu">
                         <a href="#pages" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -766,21 +723,23 @@
 
         </div>
         <!--  END CONTENT AREA  -->
-<div class="footer-wrapper">
-    <div class="footer-section f-section-1">
-        <p class="">Copyright © 2020 <a target="_blank" href="https://designreset.com/">DesignReset</a>, All rights reserved.</p>
-    </div>
-    <div class="footer-section f-section-2">
-        <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></p>
-    </div>
-</div>
+
     </div>
     <!-- END MAIN CONTAINER -->
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+
+    <script src="{{asset('https://code.jquery.com/jquery-3.5.1.js')}}" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+<script src="{{asset('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js')}}" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+<script src="{{asset('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')}}" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
     <script src="{{asset('../../assets/js/libs/jquery-3.1.1.min.js')}}"></script>
     <script src="{{asset('../../bootstrap/js/popper.min.js')}}"></script>
     <script src="{{asset('../../bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('../../bootstrap/js/lga.js')}}"></script>
+    <script src="{{asset('../../bootstrap/js/lga.min.js')}}"></script>
     <script src="{{asset('../../plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('../../assets/js/app.js')}}"></script>
     <script>
