@@ -10,11 +10,11 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-   <!-- <script src="{{ asset('js/app.js') }}" defer></script>-->
-     <script src="{{ asset('assets/js/libs/jquery-3.1.1.min.js')}}"></script>
-    <script src="{{ asset('bootstrap/js/popper.min.js')}}"></script>
-    <script src="{{ asset('bootstrap/js/bootstrap.min.js')}}"></script>
-     <script src="{{ asset('assets/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+   <script src="{{asset('js/app.js')}}"></script>
+     <script src="{{asset('assets/js/libs/jquery-3.1.1.min.js')}}"></script>
+    <script src="{{asset('bootstrap/js/popper.min.js')}}"></script>
+    <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
+     <script src="{{asset('assets/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
     
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <script src="{{ asset('assets/js/authentication/form-2.js') }}"></script>

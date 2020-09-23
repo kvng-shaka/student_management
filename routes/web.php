@@ -37,4 +37,5 @@ Route::group(['middleware'=>['auth','admin']],function(){
         return view('admin.dashboard');
     });
      Route::get('/studentform','StudentController@index');
+     Route::post('/studentadd','StudentController@store');
 });
