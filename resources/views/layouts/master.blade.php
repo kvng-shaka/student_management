@@ -287,7 +287,7 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="users" data-parent="#accordionExample">
                               <li>
-                                <a href="/studentform" data-target="#studentaddmodal"> Add Students </a>
+                                <a href="/student/create"> Add Students </a>
                             </li>
                             <li>
                                 <a href="user_profile.html"> Active Students </a>
@@ -297,7 +297,7 @@
                             </li>
 
                              <li>
-                                <a href="user_account_setting.html"> All Students </a>
+                                <a href="/student"> All Students </a>
                             </li>
                         </ul>
                     </li>
@@ -710,9 +710,9 @@
 
     <script src="{{asset('https://code.jquery.com/jquery-3.5.1.js')}}" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
-<script src="{{asset('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js')}}" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="{{asset('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js')}}" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 
-<script src="{{asset('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')}}" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="{{asset('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')}}" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <script src="{{asset('../../assets/js/libs/jquery-3.1.1.min.js')}}"></script>
     <script src="{{asset('../../bootstrap/js/popper.min.js')}}"></script>

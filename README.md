@@ -11,9 +11,13 @@ After running the command provided,navigate too your phpmyadmin and crete a data
 
 Then import the .sql to your database in the project.
 
-Then do visual host setting in your xampp and system 32.
+composer install
 
-Run php artisan serve.
+php artisan key:generate.
+
+npm install
+
+Then do visual host setting in your xampp and system 32.
 
 This is the admin detail : email => demo@gmail.com
                          : password => 1234567890
