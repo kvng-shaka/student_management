@@ -7,7 +7,8 @@ use App\Http\Controllers\Controller;
 use App\User;
 use App\Student;
 use Illuminate\Support\Facades\Redirect;
-
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class StudentController extends Controller
 {

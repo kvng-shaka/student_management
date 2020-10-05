@@ -287,7 +287,7 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="users" data-parent="#accordionExample">
                               <li>
-                                <a href="/student/create"> Add Students </a>
+                                <a href="/studentform"> Add Students </a>
                             </li>
                             <li>
                                 <a href="user_profile.html"> Active Students </a>
@@ -713,25 +713,25 @@
     <script src="{{asset('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js')}}" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 
     <script src="{{asset('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')}}" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-    <script src="{{asset('../../assets/js/libs/jquery-3.1.1.min.js')}}"></script>
-    <script src="{{asset('../../bootstrap/js/popper.min.js')}}"></script>
-    <script src="{{asset('../../bootstrap/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('../../bootstrap/js/lga.js')}}"></script>
-    <script src="{{asset('../../bootstrap/js/lga.min.js')}}"></script>
-    <script src="{{asset('../../plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
-    <script src="{{asset('../../assets/js/app.js')}}"></script>
+  <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  
     <script>
         $(document).ready(function() {
             App.init();
         });
     </script>
-    <script src="{{asset('../../assets/js/custom.js')}}"></script>
+    <script src="assets/js/custom.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-    <script src="{{asset('../../plugins/apex/apexcharts.min.js')}}"></script>
-    <script src="{{asset('../../assets/js/dashboard/dash_1.js')}}"></script>
+    <script src="plugins/apex/apexcharts.min.js"></script>
+    <script src="assets/js/dashboard/dash_1.js"></script>
+
+    <script src="{{asset('../../bootstrap/js/lga.js')}}"></script>
+    <script src="{{asset('../../bootstrap/js/lga.min.js')}}"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){
