@@ -18,6 +18,12 @@
     <link href="{{asset('../../assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
 
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/datatables.css">
+    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/dt-global_style.css">
+    <link rel="stylesheet" type="text/css" href="plugins/table/datatable/custom_dt_multiple_tables.css">
+    <!-- END PAGE LEVEL STYLES -->
+
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
     <link href="{{asset('../../plugins/apex/apexcharts.css" rel="style')}}sheet" type="text/css">
     <link href="{{asset('../../assets/css/dashboard/dash_1.css')}}" rel="stylesheet" type="text/css" />
@@ -325,6 +331,26 @@
                     </li>
 
                     <li class="menu">
+                        <a href="#book" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
+                                <span>Enquiries</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="book" data-parent="#accordionExample">
+                            <li>
+                                <a href="/enquiry/create"> Add Enquiries </a>
+                            </li>
+                            <li>
+                                <a href="/enquiry">All Enquiries</a>
+                            </li>                            
+                        </ul>
+                    </li>
+
+                    <li class="menu">
                         <a href="#components" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
@@ -372,7 +398,7 @@
                     </li>
 
 
-                     <li class="menu">
+                    <li class="menu">
                         <a href="#elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
@@ -392,15 +418,6 @@
                            
                            
                         </ul>
-                    </li>
-
-                    <li class="menu">
-                        <a href="fonticons.html" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
-                                <span>Font Icons</span>
-                            </div>
-                        </a>
                     </li>
 
                     <li class="menu">
@@ -712,51 +729,73 @@
 
     <script src="{{asset('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js')}}" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 
-    <script src="{{asset('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')}}" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
-    <script src="bootstrap/js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-  
+    
+  <script src="{{asset('../../assets/js/libs/jquery-3.1.1.min.js')}}"></script>
+    <script src="{{asset('../../bootstrap/js/popper.min.js')}}"></script>
+    <script src="{{asset('../../bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('../../plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+    <script src="{{asset('../../assets/js/app.js')}}"></script>
     <script>
         $(document).ready(function() {
             App.init();
         });
     </script>
-    <script src="assets/js/custom.js"></script>
+    <script src="{{asset('../../assets/js/custom.js')}}"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-    <script src="plugins/apex/apexcharts.min.js"></script>
-    <script src="assets/js/dashboard/dash_1.js"></script>
+    <script src="{{asset('../../plugins/apex/apexcharts.min.js')}}"></script>
+    <script src="{{asset('../../assets/js/dashboard/dash_1.js')}}"></script>
 
     <script src="{{asset('../../bootstrap/js/lga.js')}}"></script>
     <script src="{{asset('../../bootstrap/js/lga.min.js')}}"></script>
 
-<script type="text/javascript">
-$(document).ready(function(){
-    $('#addform').on('submit',function(e){
-        e.preventDefault();
-        $.ajax({
-            type:"POST",
-            url:"/studentadd",
-            data:$('#addform').serialize(),
-            success:function(response){
-                console.log(response)
-                $('#studentaddmodal').modal('hide')
-                alert("Data Saved");
-            },
-            error:function(error){
-                console.log(error)
-                alert("Data Not Saved");
-            }
-        });
-    });
-}); 
+    <script src="{{asset('../../plugins/table/datatable/datatables.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            $('table.multi-table').DataTable({
+                "oLanguage": {
+                    "oPaginate": { "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>', "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>' },
+                    "sInfo": "Showing page _PAGE_ of _PAGES_",
+                    "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>',
+                    "sSearchPlaceholder": "Search...",
+                   "sLengthMenu": "Results :  _MENU_",
+                },
+                "stripeClasses": [],
+                "lengthMenu": [7, 10, 20, 50],
+                "pageLength": 7,
+                drawCallback: function () {
+                    $('.t-dot').tooltip({ template: '<div class="tooltip status" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' })
+                    $('.dataTables_wrapper table').removeClass('table-striped');
+                }
+            });
+        } );
+    </script>
 
-</script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#addform').on('submit',function(e){
+                e.preventDefault();
+                $.ajax({
+                    type:"POST",
+                    url:"/studentadd",
+                    data:$('#addform').serialize(),
+                    success:function(response){
+                        console.log(response)
+                        $('#studentaddmodal').modal('hide')
+                        alert("Data Saved");
+                    },
+                    error:function(error){
+                        console.log(error)
+                        alert("Data Not Saved");
+                    }
+                });
+            });
+        }); 
+
+    </script>
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
- @yield('script')
+ @yield('scripts')
 
 </body>
 

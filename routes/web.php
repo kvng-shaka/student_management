@@ -40,3 +40,5 @@ Route::group(['middleware'=>['auth','admin']],function(){
 Route::post('/studentadd','StudentController@store');
 });
 
+Route::resource('enquiry', 'EnquiryController');
+
